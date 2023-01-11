@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
 
@@ -6,9 +5,9 @@ from .models import Category
 from .serializers import CategorySerializer
 
 
-class CategoryView(viewsets.ViewSet):
+class CategoryViewSet(viewsets.ViewSet):
     """
-    A simple viweset for viewing categories
+    A simple viewset for viewing categories
     """
 
     queryset = Category.objects.all()
