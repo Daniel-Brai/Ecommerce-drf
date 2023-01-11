@@ -3,7 +3,7 @@
 import os
 import sys
 
-from .ecommercedrf.settings import base
+from ecommercedrf.settings import base
 
 
 def main():
