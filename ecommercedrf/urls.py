@@ -6,11 +6,12 @@ from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework.routers import DefaultRouter
 
-from ecommercedrf.product.views import CategoryViewSet, BrandViewSet
+from ecommercedrf.product.views import CategoryViewSet, BrandViewSet, ProductViewSet
 
 router = DefaultRouter()
 router.register(r"category", CategoryViewSet)
 router.register(r"brand", BrandViewSet)
+router.register(r"product", ProductViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
